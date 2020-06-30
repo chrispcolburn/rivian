@@ -82,10 +82,10 @@ Available media query mixins:
 }
 
 
-$brand-color: blue;
+$brand-color: #ffac00;;
 .banner{
 	background-size: cover;
-	background-position: 100% 30%;
+	background-position: 100% 78%;
 	height: 320px;
 	max-height: 100%;
 	display: none;
@@ -94,7 +94,7 @@ $brand-color: blue;
 		display: block;
 	}
 	&.centerofexcellence-banner{
-		background-image: url('../../src/images/banner1.jpg');
+		background-image: url('../../src/images/trustcenter.jpg');
 		display: block;
 	}
 	&.index-banner{
@@ -619,10 +619,17 @@ a{
 				svg{
 					display: none !important;
 				}
-				
+				&:focus{
+					outline: none;
+				}
 			}
 		}
 		.ww-dsar__submission-container{
+			div{
+				&:focus{
+					outline: none;
+				}
+			}
 			.p-btn {
 				@include formButton;
 			}
